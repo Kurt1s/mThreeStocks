@@ -5,9 +5,9 @@ import java.util.ArrayList;
 
 public class Controller {
 
-        static String dbUrl = "jdbc:mysql://54.145.49.152:3306/project";
-        static String username = "mysql";
-        static String password = "mysql";
+        static String dbUrl = "jdbc:mysql://stockdb.cj3bjba60knj.us-east-2.rds.amazonaws.com/project";
+        static String username = "mthreeadmin";
+        static String password = "N00840896";
 
         public void setDataByWeek(String s, double open, double high, double low, double close, long volume){
             String insertStmt = "INSERT INTO week_data VALUES (?, ?, ?, ?, ?, ?)";

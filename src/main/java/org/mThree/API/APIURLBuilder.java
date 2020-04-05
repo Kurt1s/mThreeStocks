@@ -14,7 +14,6 @@ public class APIURLBuilder {
     }
     public static String urlBuild(Length l, String ticker){
 
-
         String urlStr = "https://www.alphavantage.co/query?function=";
         switch (l) {
             case MIN:
@@ -40,6 +39,7 @@ public class APIURLBuilder {
 
         } catch (IOException e) {
             e.printStackTrace();
+            System.out.println("APIKey.txt hold invalid key... Accessing trial key.");
             //if no API key exists, we'll throw the free demo;
             urlStr= "https://www.alphavantage.co/query?function=TIME" +
                     "_SERIES_INTRADAY&symbol=MSFT&interval=5min&outputsize=full&apikey=demo";
