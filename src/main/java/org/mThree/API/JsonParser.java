@@ -38,6 +38,8 @@ public class JsonParser {
 		int responsecode = conn.getResponseCode();
 		if(responsecode != 200)
 			System.err.println("Bad response:\t" + responsecode);
+		else
+			System.out.println("Got results in JsonParser for" + durationType);
 		System.out.println("Connected ...\n");
 		InputStream stream = conn.getInputStream();
 		BufferedReader br = new BufferedReader(new InputStreamReader(stream));

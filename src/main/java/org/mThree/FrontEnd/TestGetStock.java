@@ -16,7 +16,7 @@ public class TestGetStock {
 
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
-                .uri(URI.create("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=MSFT&apikey=6PD2VKYE4A1XZ62U"))
+                .uri(URI.create("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=MSFT&apikey=VHWKYL5TZYEGPEMF"))
                 //.header("content-type", "application/json")
                 .build();
 
@@ -35,7 +35,7 @@ public class TestGetStock {
 
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
-                .uri(URI.create("https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol=MSFT&apikey=demo"))
+                .uri(URI.create("https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol=MSFT&apikey=VHWKYL5TZYEGPEMF"))
                 //.header("content-type", "application/json")
                 .build();
 
@@ -55,7 +55,7 @@ public class TestGetStock {
 
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
-                .uri(URI.create("https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=5min&outputsize=full&apikey=demo"))
+                .uri(URI.create("https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=5min&outputsize=full&apikey=VHWKYL5TZYEGPEMF"))
                 //.header("content-type", "application/json")
                 .build();
 

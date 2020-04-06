@@ -12,6 +12,7 @@ public class APIURLBuilder {
     public enum Length {
         MIN, DAY, WEEK
     }
+    
     public static String urlBuild(Length l, String ticker){
 
         String urlStr = "https://www.alphavantage.co/query?function=";

@@ -152,7 +152,7 @@ public class Controller {
          }
 
          public ArrayList<String> getAll5Min() {
-             ArrayList result = new ArrayList<String>();
+             ArrayList<String> result = new ArrayList<String>();
 
              try {Connection con = DriverManager.getConnection(dbUrl, username, password);
                  String query = "SELECT * FROM five_min_data";
@@ -182,7 +182,7 @@ public class Controller {
          }
 
          public ArrayList<String> getAllDay() {
-             ArrayList result = new ArrayList<String>();
+             ArrayList<String> result = new ArrayList<String>();
 
              try {Connection con = DriverManager.getConnection(dbUrl, username, password);
                  String query = "SELECT * FROM day_data";
@@ -211,7 +211,7 @@ public class Controller {
          }
 
          public ArrayList<String> getAllWeek() {
-             ArrayList result = new ArrayList<String>();
+             ArrayList<String> result = new ArrayList<String>();
 
              try {Connection con = DriverManager.getConnection(dbUrl, username, password);
                  String query = "SELECT * FROM week_data";
